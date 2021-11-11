@@ -18,44 +18,50 @@
     <title>Frontend Mentor | Interactive pricing component</title>
   </head>
   <body>
-    <h1>Simple, traffic-based pricing</h1>
-    <h2>Sign-up for our 30-day trial. No credit card required.</h2>
-
+    <div class="bg">
+      <h1>Simple, traffic-based pricing</h1>
+      <h2>Sign-up for our 30-day trial. No credit card required.</h2>
+    </div>
     <div class="container">
-    <div class="top">
-      <div class="price">
-        <h3> <span class='number'>100</span>k Pageviews</h3>
-        <h3><span class="dollar">$148</span><span class="m_y">/yr</span></h3>
-      </div>
-      <div class="slider_container">
-        <input  class="slider" type="range" min="0" max="200" />
-      </div>
-      <div class="billing">
-        <p>Monthly Billing</p>
-
-        <label for="checkbox">
-          <input type="checkbox" id="checkbox" class="chckbox" />
-
-          <div class="toggle">
-
+      <div class="top">
+        <div class="price grid">
+          <h3 class="grid-1"><span class="number">100</span>k Pageviews</h3>
+          <div class="slider_container grid-2">
+            <input class="slider " type="range" min="0" max="200" />
           </div>
+          <h3 class="grid-3"><span class="dollar ">$148</span><span class="m_y">/yr</span></h3>
+        </div>
+        
+        <div class="billing">
+          <p>Monthly Billing</p>
 
-        </label>
+          <label for="checkbox">
+            <input type="checkbox" id="checkbox" class="chckbox" />
 
-        <p>Yearly Billing <span class="discount">25% discount</span></p>
+            <div class="toggle"></div>
+          </label>
+
+          <p>Yearly Billing <span class="discount">25% discount</span></p>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="features">
+          <p>
+            <span><img src="./images/icon-check.svg" alt="" /></span> Unlimited
+            websites
+          </p>
+          <p>
+            <span><img src="./images/icon-check.svg" alt="" /></span> 100% data
+            ownership
+          </p>
+          <p>
+            <span><img src="./images/icon-check.svg" alt="" /></span> Email
+            reports
+          </p>
+        </div>
+        <button class="trial_btn">Start my trial</button>
       </div>
     </div>
-
-    <div class="bottom">
-      <div class="features">
-        <p> <span><img src="./images/icon-check.svg" alt=""></span> Unlimited websites</p>
-        <p><span><img src="./images/icon-check.svg" alt=""></span> 100% data ownership</p>
-        <p><span><img src="./images/icon-check.svg" alt=""></span> Email reports</p>
-      </div>
-      <button class="trial_btn">Start my trial</button>
-    </div>
-
-  </div>
   </body>
   <script src="script.js"></script>
 </html>

@@ -7,6 +7,7 @@ const year = document.querySelector(".m_y");
 const number = document.querySelector(".number");
 const slider = document.querySelector(".slider");
 const checkmarks = document.querySelector(".features");
+const discount=document.querySelector('.discount');
 chckbox.addEventListener("click", function () {
   if (chckbox.checked) {
     //on state
@@ -26,3 +27,4 @@ chckbox.addEventListener("click", function () {
 slider.addEventListener("change", function (e) {
   number.textContent = `${e.target.value}`;
 });
+
